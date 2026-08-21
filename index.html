@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Alperen Taşkıran — Ankara'da küçük işletmeler için randevu alan tek sayfalık web siteleri. Salon, klinik, stüdyo ve servisler. Canlı örnekler ve iletişim.">
+<meta name="theme-color" content="#0F1A17">
+<meta property="og:title" content="Alperen · Ankara'da randevu alan tek sayfalık siteler">
+<meta property="og:description" content="Salon, klinik, stüdyo ve servisler için hizmet listesi, fiyatlar ve online randevu. Canlı örnekleri sayfada görebilirsiniz.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<title>Alperen · Ankara Web Sitesi ve Online Randevu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F7F6F2; --surface:#FFFFFF; --ink:#141614; --ink-2:#3C423E;
+    --muted:#767E79; --line:#E0DFD8;
+    --teal:#0E6E62; --teal-deep:#0A4F47; --teal-soft:#DCEEEA;
+    --disp:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+    --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    --wrap:1000px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:var(--disp);margin:0;text-wrap:balance;letter-spacing:-.02em}
+  p{margin:0}
+  a{color:inherit}
+
+  /* hero */
+  .hero{padding:70px 0 56px}
+  .eyebrow{display:inline-block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+    font-weight:600;color:var(--teal);background:var(--teal-soft);
+    padding:6px 12px;border-radius:999px;margin-bottom:24px}
+  h1{font-size:clamp(34px,6vw,58px);font-weight:800;line-height:1.04}
+  h1 u{text-decoration:none;box-shadow:inset 0 -.34em 0 var(--teal-soft)}
+  .lede{max-width:56ch;margin-top:22px;font-size:18.5px;color:var(--ink-2)}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;
+    text-decoration:none;padding:14px 24px;border-radius:6px;
+    background:var(--teal);color:#fff;border:1.5px solid var(--teal);transition:.15s}
+  .btn:hover{background:var(--teal-deep);border-color:var(--teal-deep)}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper)}
+  .btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  .sec-h{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+    color:var(--muted);font-family:var(--body);margin-bottom:28px}
+
+  /* ne yapiyorum */
+  .does{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+  .do h3{font-size:20px;font-weight:600;margin-bottom:8px}
+  .do .n{font-family:var(--disp);font-weight:800;font-size:15px;color:var(--teal);margin-bottom:10px;
+    display:block}
+  .do p{color:var(--ink-2);font-size:16px}
+
+  /* isler */
+  .works{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .work{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:.15s}
+  .work:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(20,22,20,.10);border-color:#CFCEC5}
+  .work:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+  .shot{height:132px;position:relative;overflow:hidden}
+  .shot span{position:absolute;left:18px;bottom:14px;font-family:var(--disp);font-weight:800;
+    font-size:19px;color:#fff;letter-spacing:-.01em}
+  .s1{background:linear-gradient(135deg,#0B0A08 0%,#2A2116 60%,#C9A227 190%)}
+  .s2{background:linear-gradient(135deg,#111214 0%,#2A1E1C 55%,#C0483C 190%)}
+  .s3{background:linear-gradient(135deg,#16202B 0%,#243444 55%,#B08A4A 195%)}
+  .work-b{padding:18px;flex:1;display:flex;flex-direction:column;gap:6px}
+  .work-b .who{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600}
+  .work-b p{font-size:15px;color:var(--ink-2);flex:1}
+  .work-b .go{font-weight:600;font-size:14.5px;color:var(--ink)}
+
+  /* adimlar */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .step{background:var(--surface);padding:22px 20px}
+  .step b{font-family:var(--disp);font-size:13px;color:var(--teal);display:block;margin-bottom:8px;
+    letter-spacing:.1em}
+  .step h3{font-size:17px;font-weight:600;margin-bottom:6px}
+  .step p{font-size:15px;color:var(--ink-2)}
+
+  /* sss */
+  .faq{display:grid;gap:2px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  details{background:var(--surface)}
+  summary{cursor:pointer;padding:18px 20px;font-weight:600;font-size:16.5px;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-family:var(--disp);font-size:22px;color:var(--teal);line-height:1}
+  details[open] summary::after{content:"–"}
+  summary:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}
+  details p{padding:0 20px 20px;color:var(--ink-2);font-size:16px;max-width:62ch}
+
+  /* iletisim */
+  .contact{background:var(--ink);color:var(--paper);border-radius:12px;padding:38px 32px;
+    display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
+  .contact h2{font-size:clamp(24px,3.4vw,32px);font-weight:800;color:#fff;max-width:22ch}
+  .contact p{color:#B9BFBB;margin-top:10px;max-width:40ch;font-size:16px}
+  .ways{display:flex;flex-direction:column;gap:10px;min-width:250px}
+  .way{display:flex;align-items:center;gap:12px;background:#1E211F;border:1px solid #2E332F;
+    border-radius:8px;padding:13px 16px;text-decoration:none;color:#fff;font-weight:500;
+    font-size:15.5px;transition:.15s}
+  .way:hover{background:#262A27;border-color:var(--teal)}
+  .way:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+  .way small{display:block;color:#9AA19C;font-weight:400;font-size:12.5px;letter-spacing:.04em}
+
+  footer{padding:34px 0 56px;color:var(--muted);font-size:14.5px}
+
+  @media(max-width:640px){
+    body{font-size:16px}
+    .hero{padding:48px 0 40px}
+    section{padding:44px 0}
+    .contact{padding:28px 22px}
+  }
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Ankara</span>
+    <h1>Küçük işletmelere,<br><u>randevu alan</u> tek sayfalık siteler.</h1>
+    <p class="lede">Ben Alperen. Salon, klinik, stüdyo ve servisler için sayfa yapıyorum:
+      hizmetler ve fiyatlar görünür, müşteri saatini kendi seçer, Google'da aratınca
+      çıkarsınız. Tek sayfa, bir hafta, baştan belli fiyat.</p>
+    <div class="cta">
+      <a class="btn" href="https://instagram.com/alper_taskiran_">Instagram'dan yazın</a>
+      <a class="btn ghost" href="#isler">Örnekleri görün</a>
+    </div>
+  </div>
+</header>
+
+<section id="ne">
+  <div class="wrap">
+    <div class="sec-h">Ne çözüyorum</div>
+    <div class="does">
+      <div class="do">
+        <span class="n">01</span>
+        <h3>"Fiyat ne kadar?"</h3>
+        <p>Aynı soruya günde onlarca kez cevap yazmak zaman alıyor. Hizmet ve fiyat
+          listesi sayfada dursun, insanlar bakıp öyle yazsın.</p>
+      </div>
+      <div class="do">
+        <span class="n">02</span>
+        <h3>Susmayan telefon</h3>
+        <p>Meşgulken arayan müşteri beklemiyor, başka yere gidiyor. Müşteri hizmeti ve
+          saati kendi seçsin, siz sadece onaylayın.</p>
+      </div>
+      <div class="do">
+        <span class="n">03</span>
+        <h3>Aramada görünmemek</h3>
+        <p>"Ankara protez tırnak", "Çayyolu cilt bakımı" diye arayan kişi sitesi olan
+          yerleri buluyor. Instagram hesapları o listede çıkmıyor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="isler">
+  <div class="wrap">
+    <div class="sec-h">Canlı örnekler · açıp deneyebilirsiniz</div>
+    <div class="works">
+      <a class="work" href="https://kprens.github.io/nura-nail-beauty/">
+        <div class="shot s1"><span>Nu&amp;Ra Nail Beauty</span></div>
+        <div class="work-b">
+          <div class="who">Tırnak &amp; güzellik · Kızılay</div>
+          <p>Dört kategorili fiyat listesi. Hizmet seçilince ücret ve süre otomatik
+            çıkıyor, dolu saatler kapalı görünüyor.</p>
+          <span class="go">Sayfayı aç →</span>
+        </div>
+      </a>
+      <a class="work" href="https://kprens.github.io/detay-erkek-kuaforu/">
+        <div class="shot s2"><span>Detay Erkek Kuaförü</span></div>
+        <div class="work-b">
+          <div class="who">Berber · Ankara</div>
+          <p>Hizmet kartları ve galeri. Randevuda müşteri berberini ve saatini
+            kendisi seçiyor.</p>
+          <span class="go">Sayfayı aç →</span>
+        </div>
+      </a>
+      <a class="work" href="https://kprens.github.io/nilays-pilates-studio/">
+        <div class="shot s3"><span>Nilay's Pilates Studio</span></div>
+        <div class="work-b">
+          <div class="who">Pilates · Gaziosmanpaşa</div>
+          <p>Haftalık ders programı ve paketler. Sayfa tek tuşla İngilizceye dönüyor —
+            stüdyonun yabancı öğrencileri için.</p>
+          <span class="go">Sayfayı aç →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="nasil">
+  <div class="wrap">
+    <div class="sec-h">Nasıl ilerliyor</div>
+    <div class="steps">
+      <div class="step">
+        <b>1</b>
+        <h3>Konuşuyoruz</h3>
+        <p>On dakika. Ne sattığınızı ve müşterinin en çok neyi sorduğunu anlıyorum.</p>
+      </div>
+      <div class="step">
+        <b>2</b>
+        <h3>Taslağı görüyorsunuz</h3>
+        <p>Birkaç gün içinde gerçek sayfanızı açıp deniyorsunuz. Beğenmezseniz yükümlülük yok.</p>
+      </div>
+      <div class="step">
+        <b>3</b>
+        <h3>İçerik yerleşiyor</h3>
+        <p>Fiyat listesi ve fotoğraflar sizden, düzenlemesi ve yazımı benden.</p>
+      </div>
+      <div class="step">
+        <b>4</b>
+        <h3>Yayına alıyoruz</h3>
+        <p>Kendi alan adınızda, telefonda düzgün görünen bir sayfa olarak.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sss">
+  <div class="wrap">
+    <div class="sec-h">Sık sorulanlar</div>
+    <div class="faq">
+      <details>
+        <summary>Ne kadar sürüyor?</summary>
+        <p>Taslak birkaç gün, yayına alma bir hafta. İçerik sizden hızlı gelirse daha
+          erken biter; genelde bekleyen taraf ben olurum.</p>
+      </details>
+      <details>
+        <summary>Fiyat ne?</summary>
+        <p>İşin kapsamına göre değişiyor — kaç hizmetiniz var, galeri olacak mı,
+          randevu sistemi kurulacak mı. Mesaj atın, birkaç soru sorup net bir rakam
+          söyleyeyim. Yarısı başlangıçta, yarısı yayına alırken.</p>
+      </details>
+      <details>
+        <summary>Alan adı ve hosting?</summary>
+        <p>Alan adını (yılda birkaç yüz lira) kendi kartınızla siz alırsınız, sahibi
+          siz olursunuz. Kurulumu ve yayına almayı ben yaparım.</p>
+      </details>
+      <details>
+        <summary>Sonradan değişiklik gerekirse?</summary>
+        <p>Fiyat ve görsel güncellemelerini aylık bakımla ben yapıyorum. Zorunlu değil —
+          istemezseniz sayfa yine tamamen sizin, dilediğinizde başkasına da yaptırabilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Neden tek sayfa?</summary>
+        <p>Küçük bir işletmenin müşterisi on sayfa gezmiyor: ne yapıyorsunuz, ne kadar,
+          ne zaman müsaitsiniz, nerdesiniz. Dördü tek sayfada olunca telefondan hızlı
+          açılıyor ve insanlar randevuya kadar gidiyor.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Sayfanızın nasıl görüneceğini konuşalım.</h2>
+        <p>Ücretsiz bir taslak çıkarıp gösteriyorum. Beğenmezseniz yükümlülük yok.</p>
+      </div>
+      <div class="ways">
+        <a class="way" href="https://instagram.com/alper_taskiran_">
+          Instagram
+          <small>@alper_taskiran_</small>
+        </a>
+        <a class="way" href="mailto:alperen8taskiran@gmail.com">
+          E-posta
+          <small>alperen8taskiran@gmail.com</small>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Alperen Taşkıran · Ankara · web sitesi ve online randevu sistemleri</p>
+  </div>
+</footer>
+
+</body>
+</html>
