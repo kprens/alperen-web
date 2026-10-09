@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Si Belle Pilates — Ankara’da kadınlara özel Reformer ve Cadillac Pilates stüdyosu. Ders seçeneklerini keşfedin, ilk bilgi talebinizi Instagram’dan iletin.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Si Belle Pilates | Kendine ayırdığın zaman">
+  <meta property="og:description" content="Ankara’da kadınlara özel Reformer ve Cadillac Pilates stüdyosu.">
+  <meta property="og:image" content="assets/img/hero-pilates.jpg">
+  <title>Si Belle Pilates | Kendine ayırdığın zaman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f4f1e9;--paper2:#ebe7dc;--ink:#25312c;--muted:#68736b;--forest:#344a3f;--sage:#b8c4ad;--sage2:#e1e7dc;--clay:#b77860;--line:rgba(37,49,44,.15);--white:#fffefa;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Manrope,system-ui,sans-serif;--wide:min(1240px,calc(100% - 64px));--ease:cubic-bezier(.2,.7,.2,1)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    button,input,select{font:inherit}
+    button,a{-webkit-tap-highlight-color:transparent}
+    button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid var(--clay);outline-offset:4px}
+    ::selection{background:#d6dfd1;color:var(--ink)}
+    .wrap{width:var(--wide);margin-inline:auto}
+    .notice{position:relative;z-index:30;background:var(--forest);color:#f6f4ed;text-align:center;padding:8px 16px;font-size:.73rem;letter-spacing:.1em;text-transform:uppercase}
+    .notice span{color:#d6c3a5}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(244,241,233,.91);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);transition:box-shadow .35s var(--ease)}
+    .site-header.scrolled{box-shadow:0 8px 28px rgba(39,52,43,.07)}
+    .nav-wrap{width:var(--wide);min-height:78px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;white-space:nowrap}
+    .brand-mark{width:37px;height:37px;border:1px solid var(--forest);border-radius:50%;display:grid;place-items:center;font:400 1rem var(--serif);color:var(--forest);letter-spacing:-.06em}
+    .brand-name{display:grid;line-height:1.05;font:500 1.12rem var(--serif);letter-spacing:.02em}
+    .brand-name small{margin-top:5px;font:600 .56rem var(--sans);letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+    .nav{display:flex;align-items:center;gap:clamp(16px,2.5vw,34px)}
+    .nav a{position:relative;text-decoration:none;color:#56635a;font-size:.86rem}
+    .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--clay);transition:right .3s var(--ease)}
+    .nav a:hover::after{right:0}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:11px;border:0;border-radius:999px;background:var(--forest);color:var(--white);text-decoration:none;padding:13px 20px;font-size:.86rem;font-weight:600;transition:transform .3s var(--ease),background .3s,box-shadow .3s;cursor:pointer}
+    .nav-cta:hover,.button:hover{background:#25392f;transform:translateY(-2px);box-shadow:0 10px 24px rgba(43,66,53,.18)}
+    .button svg,.nav-cta svg{width:15px;height:15px;transition:transform .3s var(--ease)}
+    .button:hover svg,.nav-cta:hover svg{transform:translateX(3px)}
+    .menu-toggle{display:none;width:42px;height:42px;background:transparent;border:1px solid var(--line);border-radius:50%;color:var(--ink);cursor:pointer}
+    .hero{min-height:min(760px,calc(100svh - 110px));padding:58px 0 68px;display:flex;align-items:center;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:.88fr 1.12fr;align-items:center;gap:clamp(38px,7vw,100px)}
+    .hero-copy{position:relative;z-index:2;padding-block:28px}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--clay);font-size:.72rem;letter-spacing:.19em;text-transform:uppercase;font-weight:700}
+    .eyebrow::before{content:"";width:27px;height:1px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.035em}
+    h1{max-width:570px;margin:20px 0 22px;font-size:clamp(3.1rem,6.4vw,6.35rem);line-height:.99}
+    h1 em{color:var(--forest);font-weight:400}
+    .hero-lede{max-width:465px;color:#5e6a61;font-size:clamp(1rem,1.5vw,1.13rem);line-height:1.8}
+    .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:30px}
+    .text-link{display:inline-flex;align-items:center;gap:8px;color:var(--forest);font-size:.88rem;font-weight:600;text-decoration:none}
+    .text-link span{transition:transform .3s var(--ease)}
+    .text-link:hover span{transform:translateX(4px)}
+    .hero-note{display:flex;align-items:center;gap:12px;margin-top:38px;color:var(--muted);font-size:.76rem}
+    .avatar-stack{display:flex;padding-left:3px}
+    .avatar-stack i{width:26px;height:26px;margin-left:-3px;border:2px solid var(--paper);border-radius:50%;background:var(--sage);display:grid;place-items:center;color:var(--forest);font:normal .58rem var(--serif)}
+    .avatar-stack i:nth-child(2){background:#dfc8b3}.avatar-stack i:nth-child(3){background:#c8d4c4}
+    .hero-visual{position:relative;min-width:0;padding:8px 12px 20px 0}
+    .hero-image-shell{position:relative;height:clamp(435px,56vw,660px);overflow:hidden;border-radius:49% 49% 8px 8px / 42% 42% 8px 8px;background:var(--sage2);isolation:isolate}
+    .hero-image-shell::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(27,38,32,.24));pointer-events:none}
+    .hero-image{width:100%;height:100%;object-fit:cover;object-position:62% center;transform:scale(1.035);animation:heroReveal 1.1s var(--ease) both,heroFloat 16s 1.1s ease-in-out infinite alternate}
+    .image-caption{position:absolute;z-index:1;right:25px;bottom:23px;color:white;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}
+    .round-stamp{position:absolute;z-index:2;top:12%;left:-33px;width:104px;height:104px;border-radius:50%;display:grid;place-items:center;background:var(--clay);color:#fff9ef;text-align:center;box-shadow:0 10px 30px rgba(94,57,43,.18);transform:rotate(-10deg);animation:stampIn .8s .55s var(--ease) both}
+    .round-stamp span{max-width:70px;font-size:.62rem;line-height:1.45;letter-spacing:.12em;text-transform:uppercase}
+    .hero-label{position:absolute;z-index:3;left:-55px;bottom:78px;width:185px;padding:17px 20px;background:var(--white);box-shadow:0 14px 40px rgba(43,53,43,.12);animation:cardIn .8s .4s var(--ease) both}
+    .hero-label small{display:block;color:var(--clay);font-size:.61rem;letter-spacing:.15em;text-transform:uppercase}
+    .hero-label strong{display:block;margin-top:5px;font:400 1.2rem var(--serif)}
+    .hero-index{position:absolute;right:-31px;top:39%;writing-mode:vertical-rl;color:#929a8c;font-size:.65rem;letter-spacing:.2em}
+    .scroll-cue{position:absolute;bottom:21px;left:50%;display:flex;align-items:center;gap:10px;transform:translateX(-50%);color:var(--muted);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase}
+    .scroll-cue i{width:1px;height:35px;background:var(--clay);transform-origin:top;animation:scrollLine 1.7s ease-in-out infinite}
+    .trust-band{background:var(--sage2);padding:26px 0;border-block:1px solid rgba(37,49,44,.08)}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);align-items:center;gap:18px}
+    .trust-item{min-height:54px;display:flex;align-items:center;justify-content:center;gap:13px;padding:6px 16px;border-right:1px solid rgba(37,49,44,.14)}
+    .trust-item:last-child{border-right:0}
+    .trust-icon{flex:0 0 auto;width:32px;height:32px;border:1px solid rgba(52,74,63,.38);border-radius:50%;display:grid;place-items:center;color:var(--forest)}
+    .trust-icon svg{width:15px;height:15px}
+    .trust-copy{display:grid;line-height:1.25}
+    .trust-copy strong{font-size:.82rem;font-weight:600}
+    .trust-copy small{margin-top:4px;color:var(--muted);font-size:.68rem}
+    .section{padding:clamp(88px,11vw,148px) 0}
+    .section-heading{max-width:650px;margin-bottom:52px}
+    .section-heading.center{text-align:center;margin-inline:auto}
+    .section-heading.center .eyebrow{justify-content:center}
+    h2{font-size:clamp(2.45rem,5vw,4.45rem);line-height:1.08;margin:15px 0 16px}
+    .section-intro{max-width:580px;color:var(--muted);font-size:1rem;line-height:1.8}
+    .section-heading.center .section-intro{margin-inline:auto}
+    .class-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .class-card{position:relative;min-height:535px;overflow:hidden;background:#d7ded2;isolation:isolate}
+    .class-card::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(180deg,transparent,rgba(25,37,30,.82));z-index:0}
+    .class-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);z-index:-1}
+    .class-card:first-child img{object-position:66% center}
+    .class-card:nth-child(2) img{object-position:50% center}
+    .class-card:hover img{transform:scale(1.045)}
+    .class-card-content{position:absolute;z-index:1;left:clamp(24px,4vw,46px);right:clamp(24px,4vw,46px);bottom:34px;color:white}
+    .class-card-content .micro{color:#e1d0b6;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase}
+    .class-card-content h3{margin:7px 0 8px;font:400 clamp(2rem,3.5vw,3.15rem)/1.08 var(--serif);letter-spacing:-.03em}
+    .class-card-content p{max-width:430px;margin-bottom:18px;color:rgba(255,255,255,.82);font-size:.89rem;line-height:1.7}
+    .class-card-content a{display:inline-flex;align-items:center;gap:9px;color:white;text-decoration:none;font-size:.82rem;font-weight:600}
+    .class-card-content a span{transition:transform .3s}.class-card-content a:hover span{transform:translateX(4px)}
+    .class-note{margin-top:19px;color:var(--muted);font-size:.75rem;text-align:center}
+    .approach{position:relative;background:#e8e4d9;overflow:hidden}
+    .approach::before{content:"";position:absolute;width:390px;height:390px;right:-150px;top:-160px;border:1px solid rgba(52,74,63,.12);border-radius:50%;box-shadow:0 0 0 38px rgba(52,74,63,.025),0 0 0 76px rgba(52,74,63,.02)}
+    .approach-grid{position:relative;display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(45px,9vw,130px);align-items:center}
+    .approach-photo{position:relative;max-width:490px}
+    .approach-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:48% 48% 2px 2px / 30% 30% 2px 2px}
+    .photo-tag{position:absolute;right:-25px;bottom:34px;padding:15px 19px;background:var(--white);box-shadow:0 10px 32px rgba(43,53,43,.12);font:400 1rem var(--serif)}
+    .approach-copy h2{max-width:550px}
+    .approach-copy>p:not(.eyebrow){color:var(--muted);line-height:1.85}
+    .values{display:grid;gap:0;margin-top:30px;border-top:1px solid var(--line)}
+    .value{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:18px 0;border-bottom:1px solid var(--line)}
+    .value-num{font:400 .95rem var(--serif);color:var(--clay)}
+    .value strong{display:block;font-size:.9rem;font-weight:600}
+    .value span:last-child{display:block;margin-top:3px;color:var(--muted);font-size:.81rem}
+    .booking{background:var(--forest);color:#f8f6ef;position:relative;overflow:hidden}
+    .booking::before,.booking::after{content:"";position:absolute;width:440px;height:440px;border:1px solid rgba(248,246,239,.09);border-radius:50%;pointer-events:none}
+    .booking::before{left:-220px;top:-210px;box-shadow:0 0 0 45px rgba(248,246,239,.025),0 0 0 90px rgba(248,246,239,.02)}
+    .booking::after{right:-250px;bottom:-280px;width:580px;height:580px}
+    .booking-grid{position:relative;z-index:1;display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(45px,8vw,115px);align-items:start}
+    .booking .eyebrow{color:#d9b99c}
+    .booking h2{max-width:470px;color:#fbf8f1}
+    .booking-copy>p:not(.eyebrow){max-width:390px;color:rgba(248,246,239,.72);line-height:1.8}
+    .steps{display:grid;gap:18px;margin-top:37px}
+    .step{display:grid;grid-template-columns:36px 1fr;gap:14px;align-items:start}
+    .step-num{width:32px;height:32px;border:1px solid rgba(248,246,239,.38);border-radius:50%;display:grid;place-items:center;font:400 .85rem var(--serif);color:#d9b99c}
+    .step strong{display:block;margin-top:1px;font-size:.88rem;font-weight:600}
+    .step span{display:block;margin-top:3px;color:rgba(248,246,239,.68);font-size:.78rem}
+    .request-card{padding:clamp(25px,4vw,44px);background:var(--paper);color:var(--ink);box-shadow:0 20px 60px rgba(15,28,20,.22)}
+    .request-card h3{margin:0 0 7px;font:400 1.8rem var(--serif)}
+    .request-card>p{margin:0 0 25px;color:var(--muted);font-size:.84rem}
+    .field{margin-bottom:17px}
+    .field label{display:block;margin-bottom:7px;color:#576258;font-size:.75rem;font-weight:600}
+    .field select{width:100%;height:51px;padding:0 14px;border:1px solid #d5d7cc;border-radius:0;background:var(--white);color:var(--ink);font-size:.88rem}
+    .pref-chips{display:flex;gap:8px;flex-wrap:wrap}
+    .pref-chip{border:1px solid #d5d7cc;border-radius:999px;background:transparent;color:var(--muted);padding:8px 12px;font-size:.76rem;cursor:pointer;transition:.2s}
+    .pref-chip[aria-pressed="true"]{border-color:var(--forest);background:var(--sage2);color:var(--forest)}
+    .request-card .button{width:100%;margin-top:5px}
+    .request-result{display:none;margin-top:17px;padding:16px;background:var(--sage2);border-left:2px solid var(--clay)}
+    .request-result.open{display:block;animation:fadeUp .45s var(--ease) both}
+    .request-result p{margin:0 0 13px;color:#46554a;font-size:.84rem}
+    .result-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .copy-button,.dm-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:9px 13px;border:1px solid var(--forest);border-radius:999px;text-decoration:none;font-size:.76rem;font-weight:600;cursor:pointer;transition:background .2s,color .2s}
+    .copy-button{background:transparent;color:var(--forest)}.copy-button:hover{background:#fff}
+    .dm-button{background:var(--forest);color:white}.dm-button:hover{background:#25392f}
+    .fine-print{margin:17px 0 0!important;color:#80867e!important;font-size:.69rem!important;line-height:1.6}
+    .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(35px,7vw,100px)}
+    .faq-grid .section-heading{margin-bottom:0}
+    .faq-list{border-top:1px solid var(--line)}
+    details{border-bottom:1px solid var(--line)}
+    summary{position:relative;padding:20px 35px 20px 0;list-style:none;cursor:pointer;font:400 1.08rem var(--serif)}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";position:absolute;right:3px;top:17px;color:var(--clay);font:400 1.35rem var(--sans);transition:transform .25s}
+    details[open] summary::after{transform:rotate(45deg)}
+    details p{max-width:560px;padding:0 32px 20px 0;margin:0;color:var(--muted);font-size:.86rem;line-height:1.8;animation:fadeUp .3s var(--ease) both}
+    .last-cta{padding:60px 0;background:var(--sage2)}
+    .last-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .last-cta h2{margin:0;font-size:clamp(2rem,4vw,3.3rem)}
+    .last-cta p{margin:7px 0 0;color:var(--muted);font-size:.88rem}
+    footer{padding:36px 0 22px;background:#e6e2d8}
+    .footer-main{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:25px;border-bottom:1px solid var(--line)}
+    .footer-links{display:flex;gap:21px;flex-wrap:wrap}
+    .footer-links a{color:#536057;text-decoration:none;font-size:.8rem}
+    .footer-bottom{display:flex;justify-content:space-between;gap:18px;align-items:start;padding-top:17px;color:#7b8279;font-size:.68rem}
+    .demo-note{max-width:760px;line-height:1.65}
+    .mobile-bar{display:none}
+    [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .75s var(--ease),transform .75s var(--ease);transition-delay:var(--delay,0ms)}
+    [data-reveal].visible{opacity:1;transform:translateY(0)}
+    @keyframes heroReveal{from{clip-path:inset(10% 0 0 0);opacity:.3}to{clip-path:inset(0);opacity:1}}
+    @keyframes heroFloat{from{transform:scale(1.035) translateY(0)}to{transform:scale(1.065) translateY(-7px)}}
+    @keyframes stampIn{from{opacity:0;transform:rotate(-24deg) scale(.7)}to{opacity:1;transform:rotate(-10deg) scale(1)}}
+    @keyframes cardIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes scrollLine{0%,100%{transform:scaleY(.45);opacity:.45}50%{transform:scaleY(1);opacity:1}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:900px){:root{--wide:min(100% - 42px,720px)}.nav{gap:15px}.nav a{font-size:.8rem}.nav-cta{padding:11px 14px}.hero{min-height:auto;padding:45px 0 70px}.hero-grid{grid-template-columns:.88fr 1.12fr;gap:32px}h1{font-size:clamp(3rem,8vw,5.4rem)}.hero-image-shell{height:clamp(400px,70vw,590px)}.trust-grid{grid-template-columns:1fr 1fr;row-gap:8px}.trust-item:nth-child(2){border-right:0}.class-card{min-height:480px}.approach-grid{gap:55px}.booking-grid{gap:45px}.faq-grid{gap:42px}}
+    @media(max-width:680px){:root{--wide:calc(100% - 38px)}html{scroll-padding-top:72px}.notice{font-size:.63rem;padding:7px 10px;letter-spacing:.07em}.nav-wrap{min-height:66px}.brand-mark{width:33px;height:33px}.brand-name{font-size:1rem}.menu-toggle{display:grid;place-items:center}.nav{position:absolute;left:0;right:0;top:65px;display:none;align-items:stretch;gap:0;padding:10px 19px 17px;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 14px 25px rgba(39,52,43,.09)}.nav.open{display:flex;flex-direction:column;animation:fadeUp .25s var(--ease) both}.nav a{padding:11px 4px;font-size:.9rem}.nav a::after{display:none}.nav-cta{display:none}.hero{padding:29px 0 55px}.hero-grid{grid-template-columns:1fr;gap:27px}.hero-copy{padding:14px 2px 0}.eyebrow{font-size:.64rem}h1{max-width:520px;margin:17px 0 16px;font-size:clamp(3.3rem,13vw,5rem)}.hero-lede{max-width:430px;font-size:.94rem}.hero-actions{gap:16px;margin-top:22px}.button{padding:12px 17px;font-size:.8rem}.text-link{font-size:.8rem}.hero-note{margin-top:24px;font-size:.7rem}.hero-visual{padding:0 0 15px 12px}.hero-image-shell{height:min(110vw,490px);border-radius:48% 48% 6px 6px / 35% 35% 6px 6px}.hero-image{object-position:62% center}.round-stamp{top:8%;left:-6px;width:79px;height:79px}.round-stamp span{font-size:.5rem;max-width:55px}.hero-label{left:-1px;bottom:48px;width:157px;padding:12px 15px}.hero-label strong{font-size:1.03rem}.hero-index{right:0;font-size:.55rem}.image-caption{right:14px;bottom:15px;font-size:.56rem}.scroll-cue{display:none}.trust-band{padding:17px 0}.trust-grid{gap:0 2px}.trust-item{justify-content:flex-start;min-height:58px;padding:7px 5px;border-right:0}.trust-item:nth-child(odd){border-right:1px solid rgba(37,49,44,.14)}.trust-icon{width:27px;height:27px}.trust-copy strong{font-size:.7rem}.trust-copy small{font-size:.59rem}.section{padding:78px 0}.section-heading{margin-bottom:31px}h2{font-size:clamp(2.35rem,10vw,3.3rem)}.section-intro{font-size:.91rem}.class-grid{grid-template-columns:1fr;gap:14px}.class-card{min-height:440px}.class-card-content{left:23px;right:23px;bottom:24px}.class-card-content h3{font-size:2.45rem}.class-card-content p{font-size:.82rem}.class-note{font-size:.69rem}.approach-grid{grid-template-columns:1fr;gap:43px}.approach-photo{max-width:390px;width:88%;margin:0 auto}.approach-copy h2{font-size:2.75rem}.photo-tag{right:-17px;bottom:25px;padding:12px 15px;font-size:.89rem}.booking-grid{grid-template-columns:1fr;gap:34px}.booking .section-heading{margin-bottom:0}.booking h2{font-size:2.9rem}.steps{grid-template-columns:1fr;gap:14px;margin-top:25px}.request-card{padding:24px 20px}.request-card h3{font-size:1.55rem}.faq-grid{grid-template-columns:1fr;gap:26px}.faq-grid .section-heading{max-width:460px}.faq-grid h2{font-size:2.7rem}summary{font-size:1rem;padding:18px 34px 18px 0}.last-cta{padding:42px 0}.last-cta-inner{align-items:flex-start;flex-direction:column}.last-cta h2{font-size:2.4rem}.footer-main{align-items:flex-start;flex-direction:column}.footer-bottom{flex-direction:column;gap:8px;padding-bottom:75px}.mobile-bar{position:fixed;z-index:19;left:12px;right:12px;bottom:10px;display:flex;padding:6px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:rgba(37,57,47,.95);box-shadow:0 9px 30px rgba(26,42,33,.24);backdrop-filter:blur(12px)}.mobile-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:999px;color:white;text-decoration:none;font-size:.78rem;font-weight:600}.mobile-bar svg{width:15px;height:15px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}[data-reveal]{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="notice"><span>Si Belle Pilates</span> &nbsp;·&nbsp; Ankara’da kadınlara özel stüdyo</div>
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Si Belle Pilates ana sayfa"><span class="brand-mark">sb</span><span class="brand-name">si belle<small>pilates studio</small></span></a>
+      <nav class="nav" id="nav" aria-label="Ana menü">
+        <a href="#dersler">Dersler</a><a href="#yaklasim">Stüdyo</a><a href="#randevu">İlk adım</a><a href="#sss">Merak edilenler</a>
+      </nav>
+      <a class="nav-cta" href="https://ig.me/m/sibellepilatesstudyosu" target="_blank" rel="noopener noreferrer">Instagram’dan yaz <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="nav"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Kendine ayırdığın zaman</p>
+          <h1 id="hero-title" data-reveal style="--delay:90ms">Gücünü<br><em>kendi ritminde</em><br>keşfet.</h1>
+          <p class="hero-lede" data-reveal style="--delay:170ms">Si Belle’de hareket; kendine kulak verdiğin, bedeninle yeniden bağ kurduğun bir ana dönüşür. Kadınlara özel stüdyoda Reformer ve Cadillac derslerini keşfet.</p>
+          <div class="hero-actions" data-reveal style="--delay:240ms">
+            <a class="button" href="#dersler">Dersleri keşfet <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="text-link" href="#randevu">İlk adımını at <span>↗</span></a>
+          </div>
+          <div class="hero-note" data-reveal style="--delay:310ms"><span class="avatar-stack" aria-hidden="true"><i>S</i><i>B</i><i>✳</i></span><span>Kadınlara özel, sakin ve destekleyici bir alan</span></div>
+        </div>
+        <div class="hero-visual" data-reveal style="--delay:160ms">
+          <div class="hero-image-shell"><img class="hero-image" src="assets/img/hero-pilates.jpg" alt="Aydınlık bir stüdyoda eğitmenin danışana Reformer üzerinde eşlik ettiği konsept Pilates fotoğrafı" fetchpriority="high"><span class="image-caption">Hareket · Denge · İyi hissetmek</span></div>
+          <div class="round-stamp"><span>Birlikte, sana göre</span></div>
+          <div class="hero-label"><small>Hareket alanın</small><strong>Si Belle Pilates</strong></div>
+          <span class="hero-index">01 — ANKARA</span>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><i></i> Aşağı kaydır</div>
+    </section>
+
+    <section class="trust-band" aria-label="Stüdyo özellikleri">
+      <div class="wrap trust-grid">
+        <div class="trust-item" data-reveal><span class="trust-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 17s-6-3.5-6-8.3A3.3 3.3 0 0 1 10 6.8a3.3 3.3 0 0 1 6 1.9C16 13.5 10 17 10 17Z" stroke="currentColor" stroke-width="1.25"/><path d="M7.3 10.2h5.4M10 7.5v5.4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg></span><span class="trust-copy"><strong>Kadınlara özel</strong><small>Rahat ve destekleyici ortam</small></span></div>
+        <div class="trust-item" data-reveal style="--delay:80ms"><span class="trust-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m10 2.7 5.8 2v4.7c0 3.5-2.5 6.1-5.8 7.9-3.3-1.8-5.8-4.4-5.8-7.9V4.7l5.8-2Z" stroke="currentColor" stroke-width="1.2"/><path d="m7.3 9.7 1.8 1.8 3.7-3.7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="trust-copy"><strong>TCF yeterlilik belgeli</strong><small>Tesis bilgisi profilde paylaşılmıştır</small></span></div>
+        <div class="trust-item" data-reveal style="--delay:160ms"><span class="trust-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16.5h12M5.5 16.5V8l4.5-4 4.5 4v8.5M8 16.5v-4.2h4v4.2M8 8.8h.1m3.8 0h.1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="trust-copy"><strong>Faaliyet izinli tesis</strong><small>Ankara İl Spor Müdürlüğü</small></span></div>
+        <div class="trust-item" data-reveal style="--delay:240ms"><span class="trust-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5 12 7l4.8.6-3.6 3.2 1 4.7-4.2-2.4-4.2 2.4 1-4.7-3.6-3.2L8 7l2-4.5Z" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/></svg></span><span class="trust-copy"><strong>MultiSport anlaşmalı</strong><small>Profilde belirtilen seçenek</small></span></div>
+      </div>
+    </section>
+
+    <section class="section" id="dersler" aria-labelledby="class-title">
+      <div class="wrap">
+        <div class="section-heading center" data-reveal>
+          <p class="eyebrow">Ders seçenekleri</p>
+          <h2 id="class-title">Hareketin sana<br>göre şekillensin.</h2>
+          <p class="section-intro">Hedefini ve deneyimini paylaş; sana uygun ders seçeneği hakkında stüdyoyla konuşmaya buradan başlayabilirsin.</p>
+        </div>
+        <div class="class-grid">
+          <article class="class-card" data-reveal>
+            <img src="assets/img/hero-pilates.jpg" alt="Reformer ekipmanında çalışan danışana eşlik eden eğitmen, konsept görsel" loading="lazy">
+            <div class="class-card-content"><span class="micro">Kontrollü ve akışkan</span><h3>Reformer</h3><p>Yay dirençli ekipmanla yapılan, eğitmen eşliğinde kontrollü Pilates çalışması. Seviyeni ve hedefini paylaş, başlangıç seçeneklerini birlikte konuşun.</p><a href="#randevu">Reformer hakkında bilgi al <span>↗</span></a></div>
+          </article>
+          <article class="class-card" data-reveal style="--delay:120ms">
+            <img src="assets/img/cadillac-session.jpg" alt="Cadillac ekipmanında eğitmen eşliğinde yapılan Pilates çalışması, konsept görsel" loading="lazy">
+            <div class="class-card-content"><span class="micro">Farklı hareket olanakları</span><h3>Cadillac</h3><p>Cadillac ekipmanının sunduğu farklı hareket seçeneklerini keşfet. İlk dersten önce merak ettiklerini stüdyoya ilet.</p><a href="#randevu">Cadillac hakkında bilgi al <span>↗</span></a></div>
+          </article>
+        </div>
+        <p class="class-note" data-reveal>MultiSport kullanıyorsan, uygun ders ve katılım koşullarını da mesajında sorabilirsin.</p>
+      </div>
+    </section>
+
+    <section class="section approach" id="yaklasim" aria-labelledby="approach-title">
+      <div class="wrap approach-grid">
+        <div class="approach-photo" data-reveal><img src="assets/img/cadillac-session.jpg" alt="Eğitmenin danışana Pilates hareketi sırasında rehberlik ettiği konsept görsel" loading="lazy"><span class="photo-tag">Kendine iyi bakmanın bir yolu</span></div>
+        <div class="approach-copy" data-reveal style="--delay:130ms">
+          <p class="eyebrow">Si Belle yaklaşımı</p>
+          <h2 id="approach-title">İyi hissetmek,<br>kendine alan açmakla başlar.</h2>
+          <p>Herkesin hareket geçmişi ve beklentisi farklı. Si Belle’in kadınlara özel stüdyo ortamında, sana uygun ders seçeneğini konuşarak belirleyebilir; ilk adımını acele etmeden atabilirsin.</p>
+          <div class="values">
+            <div class="value"><span class="value-num">01</span><span><strong>Kendine göre bir başlangıç</strong><span>Deneyimini ve hedefini paylaş; ders seçeneğini birlikte değerlendirin.</span></span></div>
+            <div class="value"><span class="value-num">02</span><span><strong>Eğitmen eşliğinde hareket</strong><span>Reformer ve Cadillac seçeneklerini yakından tanı.</span></span></div>
+            <div class="value"><span class="value-num">03</span><span><strong>Önce konuş, sonra planla</strong><span>Program ve uygun saatleri stüdyoyla doğrudan netleştir.</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="randevu" aria-labelledby="booking-title">
+      <div class="wrap booking-grid">
+        <div class="booking-copy" data-reveal>
+          <p class="eyebrow">İlk adım</p>
+          <h2 id="booking-title">Sana uygun dersi birlikte bulalım.</h2>
+          <p>Ders türünü seçip bilgi talebini oluştur. Mesaj Instagram DM’e geçer; uygun gün ve saati stüdyo seninle netleştirir.</p>
+          <div class="steps">
+            <div class="step"><span class="step-num">1</span><span><strong>Merak ettiğin dersi seç</strong><span>Reformer, Cadillac veya MultiSport bilgisi.</span></span></div>
+            <div class="step"><span class="step-num">2</span><span><strong>Talebini hazırla</strong><span>İstersen uygun olduğun zaman aralığını ekle.</span></span></div>
+            <div class="step"><span class="step-num">3</span><span><strong>Saati stüdyoyla netleştir</strong><span>Randevu, karşılıklı saat teyidiyle kesinleşir.</span></span></div>
+          </div>
+        </div>
+        <div class="request-card" data-reveal style="--delay:120ms">
+          <h3>Bilgi talebini oluştur</h3>
+          <p>Form bir randevu kaydı oluşturmaz; Instagram’a iletebileceğin mesajı hazırlar.</p>
+          <div class="field"><label for="service">Hangi ders hakkında bilgi almak istersin?</label><select id="service"><option value="Reformer dersi">Reformer dersi</option><option value="Cadillac dersi">Cadillac dersi</option><option value="MultiSport ile katılım">MultiSport ile katılım</option><option value="Ders seçenekleri">Ders seçenekleri</option></select></div>
+          <div class="field"><label>Ne zaman uygun olursun? <span style="font-weight:400">(isteğe bağlı)</span></label><div class="pref-chips" role="group" aria-label="Uygun zaman tercihi"><button class="pref-chip" type="button" aria-pressed="false">Hafta içi</button><button class="pref-chip" type="button" aria-pressed="false">Hafta sonu</button><button class="pref-chip" type="button" aria-pressed="false">Fark etmez</button></div></div>
+          <button class="button" id="build-message" type="button">Instagram mesajımı hazırla <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="request-result" id="request-result" aria-live="polite"><p id="prepared-message"></p><div class="result-actions"><button class="copy-button" id="copy-message" type="button">Mesajı kopyala</button><a class="dm-button" href="https://ig.me/m/sibellepilatesstudyosu" target="_blank" rel="noopener noreferrer">Instagram DM’i aç <span>↗</span></a></div></div>
+          <p class="fine-print">Saatler, ücretler ve diğer işletme bilgileri onayınızdan sonra eklenebilir. Kesin randevu, stüdyonun saat teyidiyle oluşturulur.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="section-heading" data-reveal><p class="eyebrow">Merak edilenler</p><h2 id="faq-title">İlk mesajdan<br>önce bilmen gerekenler.</h2><p class="section-intro">Sana uygun başlangıç için aklına takılanları doğrudan stüdyoya sorabilirsin.</p></div>
+        <div class="faq-list" data-reveal style="--delay:100ms">
+          <details><summary>Daha önce Pilates yapmadım. Başlayabilir miyim?</summary><p>Deneyimini ve hedefini ilk mesajında paylaş. Hangi ders seçeneğinin sana daha uygun olduğu konusunda stüdyodan bilgi alabilirsin.</p></details>
+          <details><summary>Ders saatlerini ve ücretleri nereden öğrenebilirim?</summary><p>Program ve ücret bilgileri burada örnek olarak yer almıyor. Güncel seçenekleri Instagram DM’den sorabilir, uygun saatleri stüdyoyla doğrudan netleştirebilirsin.</p></details>
+          <details><summary>MultiSport ile katılım mümkün mü?</summary><p>Profilde MultiSport anlaşması belirtiliyor. Güncel katılım koşullarını ve uygun dersleri stüdyoya danışmanı öneririz.</p></details>
+          <details><summary>Randevu talebim nasıl kesinleşiyor?</summary><p>Ders ve uygun olduğun zaman aralığını mesaj olarak iletirsin. Stüdyo saat teyidi verdiğinde randevun netleşir.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="last-cta" aria-label="İletişim çağrısı"><div class="wrap last-cta-inner"><div><h2>Kendine küçük bir alan aç.</h2><p>Ders seçeneklerini Si Belle Pilates’e sor.</p></div><a class="button" href="https://ig.me/m/sibellepilatesstudyosu" target="_blank" rel="noopener noreferrer">Instagram’dan iletişime geç <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-main"><a class="brand" href="#top"><span class="brand-mark">sb</span><span class="brand-name">si belle<small>pilates studio</small></span></a><div class="footer-links"><a href="#dersler">Dersler</a><a href="#randevu">Bilgi talebi</a><a href="https://www.instagram.com/sibellepilatesstudyosu/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div>
+      <div class="footer-bottom"><span>© 2026 Si Belle Pilates · Ankara</span><span class="demo-note">Bu sayfa, profilinizde paylaşılan bilgiler temel alınarak oluşturulmuş bir demo çalışmasıdır. Görseller konsept amaçlı üretilmiştir; gerçek stüdyo fotoğrafları, ders programı ve ücretler işletme onayıyla güncellenir.</span></div>
+    </div>
+  </footer>
+  <div class="mobile-bar"><a href="#dersler">Dersleri keşfet</a><a href="https://ig.me/m/sibellepilatesstudyosu" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.2 4.2A2.2 2.2 0 0 1 4.4 2h7.2a2.2 2.2 0 0 1 2.2 2.2v5.2a2.2 2.2 0 0 1-2.2 2.2H8.5L5 14v-2.4h-.6a2.2 2.2 0 0 1-2.2-2.2V4.2Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>DM’den sor</a></div>
+  <script>
+    (function(){
+      const header=document.querySelector('.site-header');
+      const toggle=document.querySelector('.menu-toggle');
+      const nav=document.querySelector('.nav');
+      window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>12),{passive:true});
+      toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Menüyü kapat':'Menüyü aç');nav.classList.toggle('open',open)});
+      nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Menüyü aç')}));
+      if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.14});document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el))}else{document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('visible'))}
+      let chosen='';document.querySelectorAll('.pref-chip').forEach(chip=>chip.addEventListener('click',()=>{const active=chip.getAttribute('aria-pressed')==='true';document.querySelectorAll('.pref-chip').forEach(c=>c.setAttribute('aria-pressed','false'));chip.setAttribute('aria-pressed',String(!active));chosen=active?'':chip.textContent.trim()}));
+      const result=document.getElementById('request-result'),message=document.getElementById('prepared-message');let prepared='';
+      document.getElementById('build-message').addEventListener('click',()=>{const service=document.getElementById('service').value;prepared='Merhaba, Si Belle Pilates’te '+service+' hakkında bilgi almak istiyorum.'+(chosen?' '+chosen+' uygun oluyorum.':'')+' Ders seçenekleri ve uygun gün/saatler hakkında bilgi verebilir misiniz?';message.textContent='“'+prepared+'”';result.classList.add('open');result.scrollIntoView({behavior:'smooth',block:'nearest'})});
+      document.getElementById('copy-message').addEventListener('click',async e=>{const button=e.currentTarget;try{await navigator.clipboard.writeText(prepared);button.textContent='Kopyalandı ✓'}catch{button.textContent='Metni seçip kopyalayın';const range=document.createRange();range.selectNodeContents(message);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range)}setTimeout(()=>button.textContent='Mesajı kopyala',2200)});
+    })();
+  </script>
+</body>
+</html>
