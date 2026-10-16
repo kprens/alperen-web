@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Kardeşler Erkek Kuaförü — Ankara Mamak Dereboyu’nda saç kesimi, sakal ve perma için bilgi alın.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kardeşler Erkek Kuaförü | Mamak Dereboyu">
+  <meta property="og:description" content="Saç kesimi, sakal ve perma hakkında bilgi alın; randevu talebinizi Instagram DM’den iletin.">
+  <meta property="og:image" content="assets/img/hero-shop.jpg">
+  <title>Kardeşler Erkek Kuaförü | Mamak Dereboyu</title>
+  <style>
+    :root{
+      color-scheme:dark;
+      --coal:#11110f;--coal-2:#191815;--coal-3:#25221d;
+      --paper:#eee8dc;--paper-2:#ded4c3;--ink:#211f1a;
+      --muted:#aba394;--muted-dark:#6f695f;--gold:#c5a265;--gold-light:#e0c58e;
+      --line:rgba(238,232,220,.14);--line-dark:rgba(33,31,26,.16);
+      --serif:Georgia,"Times New Roman",serif;
+      --sans:"Avenir Next",Avenir,"Helvetica Neue",Arial,system-ui,sans-serif;
+      --max:min(1220px,calc(100% - 72px));--ease:cubic-bezier(.2,.72,.18,1)
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--coal);color:var(--paper);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    button,input,select,textarea{font:inherit}
+    button,a{-webkit-tap-highlight-color:transparent}
+    :focus-visible{outline:2px solid var(--gold-light);outline-offset:4px}
+    ::selection{background:var(--gold);color:var(--coal)}
+    .wrap{width:var(--max);margin-inline:auto}
+    .topline{padding:8px 18px;background:var(--gold);color:var(--coal);text-align:center;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    .header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(17,17,15,.9);backdrop-filter:blur(14px);transition:box-shadow .3s var(--ease)}
+    .header.scrolled{box-shadow:0 12px 35px rgba(0,0,0,.24)}
+    .nav-wrap{width:var(--max);min-height:76px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;white-space:nowrap}
+    .brand-mark{width:39px;height:39px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold-light);font:400 1.2rem/1 var(--serif);border-radius:50%}
+    .brand-name{display:grid;font:600 .92rem/1.15 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+    .brand-name small{margin-top:5px;color:var(--muted);font:600 .57rem/1 var(--sans);letter-spacing:.22em}
+    .nav{display:flex;align-items:center;gap:clamp(16px,2.5vw,34px)}
+    .nav a{color:#c3bcae;text-decoration:none;font-size:.82rem;transition:color .2s}
+    .nav a:hover{color:var(--gold-light)}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border:1px solid var(--gold);border-radius:2px;background:var(--gold);color:#17150f;text-decoration:none;font-size:.8rem;font-weight:700;transition:background .25s,color .25s,transform .25s,box-shadow .25s;cursor:pointer}
+    .nav-cta:hover,.button:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 10px 28px rgba(197,162,101,.18)}
+    .button.secondary{background:transparent;color:var(--paper);border-color:var(--line)}
+    .button.secondary:hover{border-color:var(--gold);color:var(--gold-light);box-shadow:none}
+    .arrow{font-size:1.08rem;line-height:1;transition:transform .25s}
+    a:hover .arrow,.button:hover .arrow{transform:translate(2px,-2px)}
+    .menu-toggle{display:none;width:42px;height:42px;border:1px solid var(--line);background:transparent;color:var(--paper);font-size:1.25rem;cursor:pointer}
+    .hero{min-height:min(760px,calc(100svh - 108px));padding:58px 0 68px;display:flex;align-items:center;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:.91fr 1.09fr;align-items:center;gap:clamp(38px,7vw,98px)}
+    .hero-copy{position:relative;z-index:1;padding-block:20px}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.68rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,.display{font-family:var(--serif);font-weight:400;letter-spacing:-.045em}
+    h1{max-width:620px;margin:20px 0 21px;font-size:clamp(3.25rem,7vw,6.65rem);line-height:.94}
+    h1 em{color:var(--gold-light);font-weight:400}
+    .hero-copy>p:not(.eyebrow){max-width:470px;color:#c4bcae;font-size:clamp(.98rem,1.5vw,1.1rem);line-height:1.85}
+    .hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-meta{display:flex;align-items:center;gap:14px;margin-top:36px;color:var(--muted);font-size:.76rem}
+    .meta-rule{width:30px;height:1px;background:var(--gold)}
+    .hero-visual{position:relative;min-width:0}
+    .hero-image-wrap{height:clamp(430px,55vw,650px);overflow:hidden;background:#27241e;position:relative}
+    .hero-image-wrap::after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(180deg,transparent,rgba(10,10,9,.38));pointer-events:none}
+    .hero-image{width:100%;height:100%;object-fit:cover;object-position:65% center;animation:imageIn 1.2s var(--ease) both}
+    .hero-frame{position:absolute;inset:16px -16px -16px 16px;border:1px solid rgba(197,162,101,.58);pointer-events:none}
+    .hero-caption{position:absolute;z-index:1;left:24px;bottom:20px;color:#eee8dc;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+    .hero-side-note{position:absolute;right:-35px;top:12%;writing-mode:vertical-rl;color:var(--gold-light);font-size:.63rem;letter-spacing:.18em;text-transform:uppercase}
+    .hero-under{margin-top:25px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:.68rem;letter-spacing:.08em}
+    .section{padding:clamp(84px,10vw,136px) 0}
+    .section-head{max-width:650px;margin-bottom:46px}
+    .section-head.center{text-align:center;margin-inline:auto}
+    .section-head.center .eyebrow{justify-content:center}
+    h2{margin:14px 0 17px;font-size:clamp(2.5rem,5.2vw,4.6rem);line-height:1.02}
+    .section-intro{max-width:590px;color:var(--muted);font-size:.96rem;line-height:1.8}
+    .section-head.center .section-intro{margin-inline:auto}
+    .gallery{background:#171613}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;align-items:end;gap:14px}
+    .gallery-item{min-width:0}
+    .gallery-trigger{display:block;width:100%;padding:0;overflow:hidden;border:0;background:#24221e;cursor:zoom-in}
+    .gallery-item:nth-child(1) .gallery-trigger{aspect-ratio:1.02/1}
+    .gallery-item:nth-child(2) .gallery-trigger{aspect-ratio:.78/1}
+    .gallery-item:nth-child(3) .gallery-trigger{aspect-ratio:.78/1}
+    .gallery-trigger img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease),filter .4s}
+    .gallery-item:first-child img{object-position:61% center}
+    .gallery-trigger:hover img{transform:scale(1.035);filter:brightness(1.07)}
+    .gallery-caption{display:flex;justify-content:space-between;gap:12px;padding-top:12px;color:var(--paper);font:400 1.05rem var(--serif)}
+    .gallery-caption small{align-self:center;color:var(--muted);font:600 .58rem var(--sans);letter-spacing:.1em;text-transform:uppercase}
+    .concept-note{margin:28px 0 0;color:#aaa394;font-size:.73rem}
+    .services{background:var(--paper);color:var(--ink)}
+    .services .eyebrow{color:#88662d}
+    .services .section-intro{color:#625e55}
+    .service-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(36px,9vw,128px);align-items:start}
+    .service-lede{position:sticky;top:116px}
+    .service-lede h2{max-width:430px}
+    .service-list{border-top:1px solid var(--line-dark)}
+    .service-row{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:25px 0;border-bottom:1px solid var(--line-dark)}
+    .service-row h3{margin:0;font:400 clamp(1.55rem,2.5vw,2rem) var(--serif);letter-spacing:-.035em}
+    .service-row p{max-width:430px;margin:7px 0 0;color:#615d55;font-size:.83rem;line-height:1.7}
+    .service-link{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line-dark);color:var(--ink);text-decoration:none;transition:background .2s,border-color .2s,color .2s}
+    .service-link:hover{background:var(--ink);border-color:var(--ink);color:var(--gold-light)}
+    .flow{background:#211e19;position:relative;overflow:hidden}
+    .flow::before{content:"";position:absolute;top:-260px;right:-170px;width:550px;height:550px;border:1px solid rgba(197,162,101,.12);border-radius:50%;box-shadow:0 0 0 44px rgba(197,162,101,.025),0 0 0 88px rgba(197,162,101,.018);pointer-events:none}
+    .flow-grid{position:relative;z-index:1;display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(40px,8vw,110px);align-items:start}
+    .flow-copy h2{max-width:480px}
+    .flow-copy>p:not(.eyebrow){max-width:420px;color:#b8b0a2;line-height:1.8}
+    .steps{display:grid;gap:0;margin-top:34px}
+    .step{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+    .step-index{color:var(--gold);font:400 .9rem var(--serif)}
+    .step strong{display:block;font-size:.85rem;font-weight:700}
+    .step span:last-child{display:block;margin-top:4px;color:var(--muted);font-size:.76rem}
+    .request-card{padding:clamp(24px,4vw,42px);background:var(--paper);color:var(--ink);box-shadow:0 22px 64px rgba(0,0,0,.2)}
+    .request-card h3{margin:0 0 8px;font:400 1.9rem var(--serif)}
+    .request-card>p{margin:0 0 25px;color:#6c675e;font-size:.82rem}
+    .field{margin-bottom:17px}
+    .field label{display:block;margin-bottom:7px;font-size:.75rem;font-weight:700}
+    .field select,.field input,.field textarea{width:100%;padding:12px 13px;border:1px solid rgba(33,31,26,.22);border-radius:0;background:#f8f4ec;color:var(--ink);font:inherit;font-size:.85rem}
+    .field textarea{min-height:88px;resize:vertical}
+    .field select:focus,.field input:focus,.field textarea:focus{outline:2px solid #92703a;outline-offset:1px}
+    .request-card .button{width:100%;margin-top:4px}
+    .request-result{display:none;margin-top:20px;padding:17px;border:1px solid rgba(33,31,26,.18);background:#e5ddcf}
+    .request-result.open{display:block;animation:rise .35s var(--ease) both}
+    .request-result p{margin:0;color:#49453e;font-size:.83rem;line-height:1.7;white-space:pre-wrap}
+    .result-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+    .result-actions a,.copy-button{min-height:40px;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 12px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;font-size:.72rem;font-weight:700;cursor:pointer}
+    .copy-button{background:transparent;color:var(--ink)}
+    .fine-print{margin:15px 0 0;color:#726c60;font-size:.68rem;line-height:1.65}
+    .location{background:var(--coal);padding-bottom:80px}
+    .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+    .location-copy{padding:clamp(28px,5vw,56px);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+    .location-copy h2{max-width:430px}
+    .address{margin:4px 0 23px;color:#cbc3b6;font-size:.93rem;line-height:1.8}
+    .location-actions{display:flex;flex-wrap:wrap;gap:10px}
+    .map-panel{min-height:340px;position:relative;overflow:hidden;background:#201e19}
+    .map-panel img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.67) saturate(.65)}
+    .map-panel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,15,.28),transparent 65%),linear-gradient(0deg,rgba(17,17,15,.35),transparent 65%)}
+    .map-label{position:absolute;z-index:1;left:22px;bottom:20px;padding:12px 15px;background:rgba(17,17,15,.86);border-left:2px solid var(--gold);color:var(--paper);font-size:.77rem}
+    .footer{border-top:1px solid var(--line);padding:24px 0 90px;color:var(--muted);font-size:.69rem}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+    .footer-note{max-width:610px;line-height:1.7}
+    .mobile-bar{display:none}
+    .lightbox{width:min(900px,calc(100% - 28px));max-height:90vh;padding:0;border:1px solid rgba(197,162,101,.5);background:#11110f;color:var(--paper)}
+    .lightbox::backdrop{background:rgba(0,0,0,.83);backdrop-filter:blur(4px)}
+    .lightbox img{max-height:78vh;width:100%;object-fit:contain;background:#111}
+    .lightbox-close{position:absolute;right:12px;top:12px;width:42px;height:42px;border:1px solid rgba(255,255,255,.35);background:rgba(17,17,15,.85);color:#fff;font-size:1.3rem;cursor:pointer}
+    .lightbox-caption{padding:12px 16px;color:var(--muted);font-size:.76rem}
+    [data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--delay,0ms)}
+    [data-reveal].visible{opacity:1;transform:translateY(0)}
+    @keyframes imageIn{from{transform:scale(1.045);opacity:.65}to{transform:scale(1);opacity:1}}
+    @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:900px){
+      :root{--max:min(720px,calc(100% - 48px))}
+      .nav-wrap{min-height:68px}.nav{gap:16px}.nav a{font-size:.77rem}
+      .hero-grid{grid-template-columns:.88fr 1.12fr;gap:34px}
+      .hero-image-wrap{height:520px}.hero-side-note{right:-24px}
+      .service-layout{grid-template-columns:.8fr 1.2fr;gap:44px}
+      .flow-grid{grid-template-columns:1fr 1fr;gap:32px}
+    }
+    @media(max-width:680px){
+      :root{--max:calc(100% - 36px)}
+      body{font-size:15px}
+      .topline{font-size:.6rem;letter-spacing:.12em}
+      .nav-wrap{min-height:64px}
+      .brand-mark{width:35px;height:35px}.brand-name{font-size:.82rem}
+      .menu-toggle{display:grid;place-items:center;margin-left:auto}
+      .nav{position:absolute;top:calc(100% + 1px);left:0;right:0;display:none;padding:18px 18px 22px;background:#171613;border-bottom:1px solid var(--line);align-items:stretch;flex-direction:column;gap:0}
+      .nav.open{display:flex}
+      .nav a{padding:12px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+      .nav-cta{padding:10px 12px;font-size:.72rem}
+      .hero{padding:22px 0 58px;min-height:auto}
+      .hero-grid{display:flex;flex-direction:column-reverse;align-items:stretch;gap:31px}
+      .hero-copy{padding:0}
+      .hero-visual{margin-right:10px}
+      .hero-image-wrap{height:58svh;min-height:390px;max-height:550px}
+      .hero-image{object-position:64% center}
+      .hero-frame{inset:10px -10px -10px 10px}
+      .hero-side-note{right:-22px;top:8%}
+      .hero-under{margin-top:18px;font-size:.61rem}
+      h1{max-width:500px;font-size:clamp(3.25rem,15vw,5.35rem);margin:13px 0 16px}
+      .hero-copy>p:not(.eyebrow){font-size:.96rem}
+      .hero-actions{margin-top:22px}
+      .hero-meta{margin-top:22px;font-size:.69rem}
+      .section{padding:78px 0}
+      .section-head{margin-bottom:32px}
+      h2{font-size:clamp(2.5rem,11vw,3.75rem)}
+      .gallery-grid{grid-template-columns:1fr 1fr;gap:11px}
+      .gallery-item:first-child{grid-column:1/-1}
+      .gallery-item:first-child .gallery-trigger{aspect-ratio:1.25/1}
+      .gallery-item:nth-child(2) .gallery-trigger,.gallery-item:nth-child(3) .gallery-trigger{aspect-ratio:.82/1}
+      .gallery-caption{font-size:.95rem;padding-top:8px}
+      .gallery-caption small{font-size:.52rem}
+      .concept-note{margin-top:22px;font-size:.7rem}
+      .service-layout{display:block}
+      .service-lede{position:static;margin-bottom:32px}
+      .service-row{padding:20px 0}
+      .service-row h3{font-size:1.55rem}
+      .flow-grid{display:block}
+      .flow-copy{margin-bottom:32px}
+      .request-card{padding:23px 18px}
+      .location-grid{grid-template-columns:1fr}
+      .map-panel{min-height:250px;grid-row:1}
+      .location-copy{padding:30px 23px}
+      .footer{padding-bottom:95px}
+      .footer-row{display:block}
+      .footer-note{margin-top:12px}
+      .mobile-bar{position:fixed;z-index:30;left:10px;right:10px;bottom:10px;display:grid;grid-template-columns:.75fr 1.25fr;gap:7px;padding:7px;background:rgba(22,21,18,.94);border:1px solid rgba(197,162,101,.35);backdrop-filter:blur(14px);box-shadow:0 12px 35px rgba(0,0,0,.38)}
+      .mobile-bar a{min-height:43px;display:flex;align-items:center;justify-content:center;gap:7px;padding:8px;text-decoration:none;font-size:.72rem;font-weight:700}
+      .mobile-bar a:first-child{color:var(--paper)}
+      .mobile-bar a:last-child{background:var(--gold);color:var(--coal)}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+      [data-reveal]{opacity:1;transform:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="topline">Ankara · Mamak · Dereboyu</div>
+  <header class="header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Kardeşler Erkek Kuaförü ana sayfa">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span class="brand-name">Kardeşler<small>Erkek Kuaförü</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Ana menü">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#tarzlar">Tarzlar</a>
+        <a href="#randevu">Randevu talebi</a>
+        <a href="#konum">Konum</a>
+      </nav>
+      <a class="nav-cta" href="https://ig.me/m/kardesler_erkek_kuaforuu" target="_blank" rel="noopener noreferrer">DM’den yaz <span class="arrow" aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Mamak Dereboyu’nda</p>
+          <h1 id="hero-title" data-reveal style="--delay:80ms">İyi bir kesim,<br><em>kendini belli eder.</em></h1>
+          <p data-reveal style="--delay:150ms">Saç kesimi, sakal ve perma seçeneklerini keşfedin. Aklınızdaki modeli paylaşın; detayları Kardeşler Erkek Kuaförü’ne Instagram DM’den sorun.</p>
+          <div class="hero-actions" data-reveal style="--delay:220ms">
+            <a class="button" href="#randevu">Randevu talebi oluştur <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="https://maps.google.com/?q=Ankara%20Mamak%20Dereboyu%20Caddesi%2038%2FD" target="_blank" rel="noopener noreferrer">Konumu gör</a>
+          </div>
+          <div class="hero-meta" data-reveal style="--delay:280ms"><span class="meta-rule" aria-hidden="true"></span><span>İletişim ve uygun saat bilgisi DM üzerinden</span></div>
+        </div>
+        <div class="hero-visual" data-reveal style="--delay:120ms">
+          <div class="hero-image-wrap"><img class="hero-image" src="assets/img/hero-shop.jpg" alt="Berberin müşterisine saç kesimi yaptığı konsept fotoğraf"><span class="hero-caption">Özen, her ayrıntıda</span></div>
+          <span class="hero-frame" aria-hidden="true"></span>
+          <span class="hero-side-note">Kardeşler · Mamak</span>
+          <div class="hero-under"><span>Saç kesimi · Sakal · Perma</span><span>01 / Ankara</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="tarzlar" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Tarzlardan ilham alın</p>
+          <h2 id="gallery-title">Aynada gördüğünüz,<br>size ait olsun.</h2>
+          <p class="section-intro">Düşündüğünüz kesimi ya da sakal şeklini DM’den paylaşın; size uygun hizmet ve detayları birlikte konuşun.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-reveal>
+            <button class="gallery-trigger" type="button" aria-label="Konsept saç kesimi fotoğrafını büyüt" data-full="assets/img/hero-shop.jpg" data-caption="Saç kesimi · konsept fotoğraf"><img src="assets/img/hero-shop.jpg" alt="Müşterisine saç kesimi yapan berber, konsept çalışma" loading="lazy"></button>
+            <figcaption class="gallery-caption"><span>Saç kesimi</span><small>Konsept kare</small></figcaption>
+          </figure>
+          <figure class="gallery-item" data-reveal style="--delay:90ms">
+            <button class="gallery-trigger" type="button" aria-label="Konsept sakal tıraşı fotoğrafını büyüt" data-full="assets/img/beard-detail.jpg" data-caption="Sakal bakımı · konsept fotoğraf"><img src="assets/img/beard-detail.jpg" alt="Sakal çizgisini düzenleyen berber, konsept çalışma" loading="lazy"></button>
+            <figcaption class="gallery-caption"><span>Sakal bakımı</span><small>Konsept kare</small></figcaption>
+          </figure>
+          <figure class="gallery-item" data-reveal style="--delay:180ms">
+            <button class="gallery-trigger" type="button" aria-label="Konsept perma stili fotoğrafını büyüt" data-full="assets/img/perm-finish.jpg" data-caption="Perma stili · konsept fotoğraf"><img src="assets/img/perm-finish.jpg" alt="Doğal bukleli saçın son dokunuşlarını yapan berber, konsept çalışma" loading="lazy"></button>
+            <figcaption class="gallery-caption"><span>Perma</span><small>Konsept kare</small></figcaption>
+          </figure>
+        </div>
+        <p class="concept-note" data-reveal>Bu örnek sayfadaki fotoğraflar tasarım yönünü göstermek için üretilmiş konsept görsellerdir; Kardeşler’in gerçek çalışmaları değildir.</p>
+      </div>
+    </section>
+
+    <section class="section services" id="hizmetler" aria-labelledby="services-title">
+      <div class="wrap service-layout">
+        <div class="service-lede" data-reveal>
+          <p class="eyebrow">Hizmetler</p>
+          <h2 id="services-title">Bakımınızı<br>kendi tarzınızda tamamlayın.</h2>
+          <p class="section-intro">Profilde öne çıkan hizmetleri tek yerde inceleyin; fiyat ve uygunluk bilgisini işletmeden doğrudan alın.</p>
+        </div>
+        <div class="service-list">
+          <article class="service-row" data-reveal>
+            <div><h3>Saç kesimi</h3><p>Aklınızdaki modeli veya örnek görseli mesajınıza ekleyerek bilgi isteyin.</p></div>
+            <a class="service-link" href="#randevu" aria-label="Saç kesimi için bilgi talebi oluştur" data-service="Saç kesimi">↗</a>
+          </article>
+          <article class="service-row" data-reveal style="--delay:80ms">
+            <div><h3>Sakal tıraşı</h3><p>Şekil ve bakım tercihinizi paylaşın; detayları DM’de netleştirin.</p></div>
+            <a class="service-link" href="#randevu" aria-label="Sakal tıraşı için bilgi talebi oluştur" data-service="Sakal tıraşı">↗</a>
+          </article>
+          <article class="service-row" data-reveal style="--delay:160ms">
+            <div><h3>Perma</h3><p>Profilde paylaşılan perma çalışmaları hakkında bilgi alın.</p></div>
+            <a class="service-link" href="#randevu" aria-label="Perma için bilgi talebi oluştur" data-service="Perma">↗</a>
+          </article>
+          <article class="service-row" data-reveal style="--delay:240ms">
+            <div><h3>Saç ve sakal</h3><p>Birlikte bakım için randevu ve uygunluk talebinizi iletin.</p></div>
+            <a class="service-link" href="#randevu" aria-label="Saç ve sakal için bilgi talebi oluştur" data-service="Saç ve sakal">↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow" id="randevu" aria-labelledby="flow-title">
+      <div class="wrap flow-grid">
+        <div class="flow-copy" data-reveal>
+          <p class="eyebrow">İlk mesajdan randevuya</p>
+          <h2 id="flow-title">Önce konuşun,<br>sonra netleştirin.</h2>
+          <p>İstediğiniz hizmeti ve size uygun zamanı paylaşın. Talebiniz Instagram DM’e hazır mesaj olarak geçer; randevu saati işletmeyle karşılıklı teyit edilir.</p>
+          <div class="steps">
+            <div class="step"><span class="step-index">01</span><span><strong>Hizmetinizi seçin</strong><span>Saç kesimi, sakal, perma veya birlikte bakım.</span></span></div>
+            <div class="step"><span class="step-index">02</span><span><strong>Uygun zamanınızı ekleyin</strong><span>Gün ve saat tercihinizi isteğe bağlı belirtin.</span></span></div>
+            <div class="step"><span class="step-index">03</span><span><strong>DM’den teyit alın</strong><span>Saat ve hizmet ayrıntıları doğrudan netleşsin.</span></span></div>
+          </div>
+        </div>
+        <form class="request-card" id="request-form">
+          <h3>Bilgi talebinizi hazırlayın</h3>
+          <p>Form randevu oluşturmaz; Instagram’da gönderebileceğiniz bir mesaj hazırlar.</p>
+          <div class="field">
+            <label for="service">Hangi hizmet hakkında bilgi almak istiyorsunuz?</label>
+            <select id="service" name="service">
+              <option>Saç kesimi</option><option>Sakal tıraşı</option><option>Perma</option><option>Saç ve sakal</option><option>Genel bilgi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="time">Size uygun gün/saat <span style="font-weight:400">(isteğe bağlı)</span></label>
+            <input id="time" name="time" type="text" maxlength="80" placeholder="Örn. Cumartesi öğleden sonra">
+          </div>
+          <div class="field">
+            <label for="note">Eklemek istediğiniz not <span style="font-weight:400">(isteğe bağlı)</span></label>
+            <textarea id="note" name="note" maxlength="180" placeholder="İsterseniz aklınızdaki modeli kısaca anlatın"></textarea>
+          </div>
+          <button class="button" type="submit">Mesajı hazırla <span class="arrow" aria-hidden="true">↗</span></button>
+          <div class="request-result" id="request-result" aria-live="polite">
+            <p id="prepared-message"></p>
+            <div class="result-actions">
+              <button class="copy-button" id="copy-message" type="button">Mesajı kopyala</button>
+              <a id="send-message" href="https://ig.me/m/kardesler_erkek_kuaforuu" target="_blank" rel="noopener noreferrer">Instagram DM’i aç <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <p class="fine-print">Saat, hizmet kapsamı ve ücret bilgileri işletmeden teyit edilir. Görseller konsepttir; istenirse gerçek çalışmalarla değiştirilir.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section location" id="konum" aria-labelledby="location-title">
+      <div class="wrap location-grid">
+        <div class="location-copy" data-reveal>
+          <p class="eyebrow">Bize ulaşın</p>
+          <h2 id="location-title">Dereboyu’nda<br>görüşmek üzere.</h2>
+          <p class="address">Ankara · Mamak<br>Dereboyu Caddesi 38/D</p>
+          <div class="location-actions">
+            <a class="button" href="https://maps.google.com/?q=Ankara%20Mamak%20Dereboyu%20Caddesi%2038%2FD" target="_blank" rel="noopener noreferrer">Haritada aç <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="https://ig.me/m/kardesler_erkek_kuaforuu" target="_blank" rel="noopener noreferrer">Instagram’dan yaz</a>
+          </div>
+        </div>
+        <a class="map-panel" href="https://maps.google.com/?q=Ankara%20Mamak%20Dereboyu%20Caddesi%2038%2FD" target="_blank" rel="noopener noreferrer" aria-label="Kardeşler Erkek Kuaförü konumunu haritada aç">
+          <img src="assets/img/hero-shop.jpg" alt="" loading="lazy">
+          <span class="map-label">Mamak · Dereboyu Caddesi 38/D</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kardeşler<small>Erkek Kuaförü</small></span></a>
+      <p class="footer-note">Bu sayfa, Instagram profilinde paylaşılan bilgilere göre hazırlanmış bir demo çalışmasıdır. Fotoğraflar konsept amaçlı üretilmiştir; işletmenin gerçek salon ve çalışma görselleri değildir. Saat ve fiyat bilgileri paylaşılmadığı için eklenmemiştir.</p>
+    </div>
+  </footer>
+  <div class="mobile-bar" aria-label="Hızlı iletişim">
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="https://ig.me/m/kardesler_erkek_kuaforuu" target="_blank" rel="noopener noreferrer">DM’den bilgi al <span aria-hidden="true">↗</span></a>
+  </div>
+  <dialog class="lightbox" id="lightbox" aria-label="Fotoğraf önizlemesi">
+    <button class="lightbox-close" type="button" aria-label="Kapat">×</button>
+    <img id="lightbox-image" src="" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </dialog>
+  <script>
+    (function(){
+      var header=document.querySelector('.header');
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.querySelector('.nav');
+      window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.scrollY>8)},{passive:true});
+      toggle.addEventListener('click',function(){
+        var open=toggle.getAttribute('aria-expanded')!=='true';
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.setAttribute('aria-label',open?'Menüyü kapat':'Menüyü aç');
+        nav.classList.toggle('open',open);
+      });
+      nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Menüyü aç')})});
+      if('IntersectionObserver' in window){
+        var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.14});
+        document.querySelectorAll('[data-reveal]').forEach(function(el){observer.observe(el)});
+      }else{document.querySelectorAll('[data-reveal]').forEach(function(el){el.classList.add('visible')})}
+      document.querySelectorAll('[data-service]').forEach(function(link){
+        link.addEventListener('click',function(){document.getElementById('service').value=link.getAttribute('data-service')});
+      });
+      var form=document.getElementById('request-form');
+      var result=document.getElementById('request-result');
+      var preview=document.getElementById('prepared-message');
+      var sendLink=document.getElementById('send-message');
+      var prepared='';
+      form.addEventListener('submit',function(event){
+        event.preventDefault();
+        var service=document.getElementById('service').value;
+        var time=document.getElementById('time').value.trim();
+        var note=document.getElementById('note').value.trim();
+        prepared='Merhaba, Kardeşler Erkek Kuaförü’nde '+service+' hakkında bilgi almak istiyorum.';
+        if(time){prepared+=' Uygun olduğum zaman: '+time+'.'}
+        if(note){prepared+=' Not: '+note+'.'}
+        prepared+=' Uygunluk ve randevu için bilgi verebilir misiniz?';
+        preview.textContent='“'+prepared+'”';
+        sendLink.href='https://ig.me/m/kardesler_erkek_kuaforuu?text='+encodeURIComponent(prepared);
+        result.classList.add('open');
+      });
+      document.getElementById('copy-message').addEventListener('click',async function(event){
+        var button=event.currentTarget;
+        try{await navigator.clipboard.writeText(prepared);button.textContent='Kopyalandı ✓'}
+        catch(error){button.textContent='Mesajı seçip kopyalayın';var range=document.createRange();range.selectNodeContents(preview);var selection=window.getSelection();selection.removeAllRanges();selection.addRange(range)}
+        setTimeout(function(){button.textContent='Mesajı kopyala'},2200);
+      });
+      var lightbox=document.getElementById('lightbox');
+      var lightboxImage=document.getElementById('lightbox-image');
+      var lightboxCaption=document.getElementById('lightbox-caption');
+      document.querySelectorAll('.gallery-trigger').forEach(function(button){
+        button.addEventListener('click',function(){
+          lightboxImage.src=button.getAttribute('data-full');
+          lightboxImage.alt=button.querySelector('img').alt;
+          lightboxCaption.textContent=button.getAttribute('data-caption');
+          lightbox.showModal();
+        });
+      });
+      lightbox.querySelector('.lightbox-close').addEventListener('click',function(){lightbox.close()});
+      lightbox.addEventListener('click',function(event){if(event.target===lightbox){lightbox.close()}});
+    })();
+  </script>
+</body>
+</html>
